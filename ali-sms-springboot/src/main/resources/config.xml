@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <rootName>阿里云短信发送平台</rootName>
+    <rootDescription>阿里云短信发送平台</rootDescription>
+    <accesss>
+        <accessKeyId>LTAIP3ErYWkzwl7F</accessKeyId>
+        <accessKeySecret>qQEffVirF3cgf46tGPgaDyZF333NeQ</accessKeySecret>
+        <accessDescription>阿里云账号：南宁市地方志办公室，密是 0771-5849254</accessDescription>
+        <projects>
+            <projectId>222</projectId>
+            <projectName>南宁地情网</projectName>
+            <projectDescription>南宁地情网</projectDescription>
+            <templates>
+                <templateId>1001</templateId>  <!-- 此templateId必须唯一-->
+                <templateCode>SMS_145170979</templateCode>
+                <sign>南宁方志办</sign>
+                <templateDescription>南宁地情网登陆短信模板</templateDescription>
+                <paramKeys>code</paramKeys>
+            </templates>
+        </projects>
+        <projects>
+            <projectId>333</projectId>
+            <projectName>南宁方志馆</projectName>
+            <projectDescription>南宁方志馆</projectDescription>
+            <templates>
+                <templateId>1002</templateId>  <!-- 此templateId必须唯一-->
+                <templateCode>SMS_145170979</templateCode>
+                <sign>南宁方志办</sign>
+                <templateDescription>南宁地情网登陆短信模板</templateDescription>
+                <paramKeys>code</paramKeys>
+            </templates>
+            <templates>
+                <templateId>1003</templateId>  <!-- 此templateId必须唯一-->
+                <templateCode>SMS_145170979</templateCode>
+                <sign>南宁方志办</sign>
+                <templateDescription>南宁地情网登陆短信模板</templateDescription>
+                <paramKeys>code</paramKeys>
+                <paramKeys>name</paramKeys>
+            </templates>
+        </projects>
+    </accesss>
+
+</root>

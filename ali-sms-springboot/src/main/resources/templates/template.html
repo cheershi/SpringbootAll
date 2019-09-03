@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>templateId</th>
+        <th>templateCode</th>
+        <th>sign</th>
+        <th>templateDescription</th>
+        <th>paramKeys</th>
+    </tr>
+    </thead>
+    <tbody th:each="template : ${list}">
+    <tr>
+        <td th:text="${template.templateId}"></td>
+        <td th:text="${template.templateCode}"></td>
+        <td th:text="${template.sign}"></td>
+        <td th:text="${template.templateDescription}"></td>
+        <td>
+            <span th:each="param : ${template.paramKeys}">
+            <span th:text="${param}">,</span>
+            </span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>

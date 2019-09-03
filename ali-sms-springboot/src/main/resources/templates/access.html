@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8" />
+    <title></title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>accessKeyId</th>
+        <th>accessKeySecret</th>
+        <th>accessDescription</th>
+        <th>查看</th>
+    </tr>
+    </thead>
+    <tbody th:each="access : ${list}">
+    <tr>
+        <td th:text="${access.accessKeyId}"></td>
+        <td th:text="${access.accessKeySecret}"></td>
+        <td th:text="${access.accessDescription}"></td>
+        <td ><a style="font-size: medium"  th:href="@{/config/project(accessId=${access.accessKeyId})}"><input type="button" value="查看"/></a></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
